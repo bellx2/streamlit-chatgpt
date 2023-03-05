@@ -7,7 +7,7 @@ load_dotenv()
 st.title('GPT-3 Demo')
 openai.api_key = os.getenv('OPENAI_API_KEY')
 if not os.getenv('OPENAI_API_KEY'):
-    st.error("OpenAI API key が必要です。環境変数 OPENAI_API_KEY を設定してください。")
+    st.error("OpenAI API key is required. Set the environment variable OPENAI_API_KEY.")
 else:
     message = st.text_input("Question:")
     response = ""
